@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ Rectangle
+
 Contains the class Rectangle.
     """
 
