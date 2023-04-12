@@ -11,4 +11,6 @@ def is_kind_of_class(obj, a_class):
     Returns:
             boolean: True or False.
     """
+    # print("---> obj type {}".format(type(obj)))
+    # print("---> a_class type {}".format(type(a_class)))
     return isinstance(obj, a_class)
