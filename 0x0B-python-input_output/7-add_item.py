@@ -1,18 +1,9 @@
 #!/usr/bin/python3
-""" Load, add, save
+"""saves object as json string in a file"""
+import json
 
-Script adding arguments to a Python list, and then saves them to a file.
-    """
 
-import sys
-
-save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
-load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
-
-filename = "add_item.json"
-
-try:
-    my_list = load_from_json_file(filename)
-except FileNotFoundError:
-    my_list = []
-save_to_json_file(my_list + sys.argv[1:], filename)
+def save_to_json_file(my_obj, filename):
+    """ a script adding arguments to a Python list,saves them to a file"""
+    with open(filename, mode='w', encoding='utf-8') as f:
+        f.write(json.dumps(my_obj))
