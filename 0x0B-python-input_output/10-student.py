@@ -4,7 +4,7 @@
 
 
 class Student():
-    """ Defines a student info """
+    """ Defines student's given info """
 
     def __init__(self, first_name, last_name, age):
         """ Builder of the Student class """
