@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Load, add and save
+""" Load, add, save
 
 Script adding arguments to a Python list, and then saves them to a file.
     """
@@ -12,7 +12,7 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 filename = "add_item.json"
 
 try:
-        my_list = load_from_json_file(filename)
+    my_list = load_from_json_file(filename)
 except FileNotFoundError:
-        my_list = []
+    my_list = []
 save_to_json_file(my_list + sys.argv[1:], filename)
